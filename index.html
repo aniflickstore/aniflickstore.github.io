@@ -3,36 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AniFlick Store</title>
+
+<title>AniFlick Store | Clothes & Accessories</title>
+
+<meta name="description" content="AniFlick Store offers premium clothes, accessories and trendy products at best prices.">
+<meta name="keywords" content="AniFlick Store, clothes, accessories, online store">
+<meta name="author" content="AniFlick Store">
 
 <style>
 body{
 margin:0;
-font-family: 'Segoe UI', sans-serif;
+font-family:Segoe UI, sans-serif;
 background:#0b0f19;
 color:#e5e7eb;
 }
-
 header{
 background:#020617;
 padding:20px;
 text-align:center;
-box-shadow:0 0 20px rgba(0,0,0,0.6);
 }
-
 header h1{
-margin:0;
 color:#38bdf8;
-font-size:2.2rem;
+margin:0;
 }
-
 nav a{
 color:#e5e7eb;
 margin:0 15px;
 text-decoration:none;
 font-weight:500;
 }
-
 nav a:hover{
 color:#38bdf8;
 }
@@ -42,47 +41,35 @@ padding:60px 20px;
 text-align:center;
 }
 
-.hero{
-background:linear-gradient(135deg,#020617,#020617,#020617);
-}
-
-.hero h2{
-font-size:2.4rem;
-margin-bottom:10px;
-}
-
-.hero p{
-color:#9ca3af;
-font-size:1.1rem;
-}
-
 .btn{
 display:inline-block;
-margin-top:20px;
-padding:12px 28px;
+margin-top:15px;
+padding:12px 30px;
 background:#38bdf8;
 color:#020617;
-border-radius:30px;
+border-radius:25px;
 text-decoration:none;
 font-weight:bold;
 }
 
-.services, .contact{
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
 background:#020617;
-margin:30px auto;
-max-width:900px;
+padding:20px;
 border-radius:15px;
-padding:40px;
-box-shadow:0 0 25px rgba(0,0,0,0.7);
+box-shadow:0 0 20px rgba(0,0,0,0.6);
 }
 
-.services h2, .about h2, .contact h2{
-color:#38bdf8;
-}
-
-.services p{
-font-size:1.05rem;
-line-height:1.8;
+.card img{
+width:100%;
+border-radius:10px;
 }
 
 footer{
@@ -91,6 +78,20 @@ padding:15px;
 text-align:center;
 color:#9ca3af;
 font-size:0.9rem;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
 }
 </style>
 </head>
@@ -101,47 +102,67 @@ font-size:0.9rem;
 <h1>AniFlick Store</h1>
 <nav>
 <a href="#home">Home</a>
-<a href="#services">Services</a>
+<a href="#products">Products</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
-<section id="home" class="hero">
-<h2>Premium Products • Clothes • Accessories</h2>
-<p>Your one-stop store for stylish and quality products.</p>
-<a href="#contact" class="btn">Shop With Us</a>
+<section id="home">
+<h2>Premium Clothes & Accessories</h2>
+<p>Trendy • Affordable • Trusted</p>
+<a class="btn" href="#products">Shop Now</a>
 </section>
 
-<section id="services" class="services">
-<h2>Our Services</h2>
+<section id="products">
+<h2 style="color:#38bdf8">Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://via.placeholder.com/300x300" alt="Clothes">
+<h3>Stylish Clothes</h3>
+<p>Trendy & comfortable wear</p>
+<a class="btn" href="https://wa.me/917016327771" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x300" alt="Accessories">
+<h3>Accessories</h3>
+<p>Premium quality accessories</p>
+<a class="btn" href="https://wa.me/917016327771" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x300" alt="Products">
+<h3>Other Products</h3>
+<p>Best deals available</p>
+<a class="btn" href="https://wa.me/917016327771" target="_blank">Order on WhatsApp</a>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<h2 style="color:#38bdf8">About Us</h2>
 <p>
-✔ Trendy Clothes for All<br>
-✔ Premium Accessories<br>
-✔ Quality Products at Best Prices<br>
-✔ Fast & Reliable Service
+AniFlick Store is your one-stop destination for premium clothes,
+accessories and trending products. Customer satisfaction is our top priority.
 </p>
 </section>
 
-<section id="about" class="about">
-<h2>About AniFlick Store</h2>
-<p>
-AniFlick Store is a modern online business providing stylish clothing,
-accessories, and quality products with a premium experience.
-Customer satisfaction is our top priority.
-</p>
-</section>
-
-<section id="contact" class="contact">
-<h2>Contact Us</h2>
-<p>📧 Email: <b>aniflickstore@gmail.com</b></p>
-<p>📦 DM us for orders & business inquiries</p>
+<section id="contact">
+<h2 style="color:#38bdf8">Contact Us</h2>
+<p>📧 aniflickstore@gmail.com</p>
+<p>📱 WhatsApp: +91 70163 27771</p>
 </section>
 
 <footer>
-© 2025 AniFlick Store • All Rights Reserved
+© 2025 AniFlick Store | All Rights Reserved
 </footer>
+
+<!-- Floating WhatsApp Button -->
+<a class="whatsapp" href="https://wa.me/917016327771" target="_blank">💬</a>
 
 </body>
 </html>
-
